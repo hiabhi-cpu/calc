@@ -16,12 +16,15 @@ func main() {
 	}
 	exp := strings.Split(os.Args[1], " ")
 	// fmt.Println(exp[0])
-	res, err := getResultInt(exp[0], exp[2], exp[1])
-	if err != nil {
-		fmt.Println("No correct expression")
-		return
-	}
-	fmt.Println(res)
+	// res, err := getResultInt(exp[0], exp[2], exp[1])
+	// if err != nil {
+	// 	fmt.Println("No correct expression")
+	// 	return
+	// }
+	// fmt.Println(res)
+
+	postFix := toPostFix(exp)
+	fmt.Println(postFix)
 }
 
 func getResultInt(a, b, opr string) (int64, error) {
