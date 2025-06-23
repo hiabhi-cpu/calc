@@ -25,6 +25,13 @@ func main() {
 
 	postFix := toPostFix(exp)
 	fmt.Println(postFix)
+
+	res, err := solvePostfix(postFix)
+	if err != nil {
+		fmt.Println("Error in calculation")
+		return
+	}
+	fmt.Println(res)
 }
 
 func getResultInt(a, b, opr string) (int64, error) {

@@ -32,7 +32,3 @@ func toPostFix(infix []string) (postfix []string) {
 	fmt.Println(stk.Len())
 	return postfix
 }
-
-// func pushToStack(stk *stack.Stack, opr string) (string, error) {
-
-// }
